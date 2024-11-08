@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+		<style>
+			#heading{
+				color:red;
+				background-color:yellow;
+				display: inline;
+				}
+			table{
+				background-color:#D3D3D3;
+				width:50%;
+				height:50%;
+				Margin-left:auto;
+				Margin-right:auto;
+				}
+			
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+  			-webkit-appearance: none;
+  			margin: 0;
+			}
+
+			
+			input[type=number] {
+  			-moz-appearance: textfield;
+			}
+			.reset{
+					background-color:#DC143C;
+					color:white;
+					cursor: pointer;
+				}
+			.sumbit{
+					background-color:#00b200;
+					color:white;
+					cursor: pointer;
+				}
+		</style>
+	</head>
+	<body>
+		<header>
+		<marquee id="marq"
+			direction="right"
+			behavior=alternate
+			scrollamount="30"
+			onmouseover="this.stop()"
+			onmouseout="this.start()">
+			<h3 id="heading">WELCOME TO FRESHERS WORLD !!!</h3>
+		</marquee>
+		<table class="box" border="1" cellpadding="7">
+			<form>
+				<tr>
+					<th colspan="4" text-align="center">Registration Form</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td colspan="2"><input type="text" id="name"></td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td colspan="2"><select id="cars">
+						<option value="none">Select</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+  						<option value="24">24</option>
+  						<option value="25">25</option>
+  						<option value="26">26</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td colspan="2"><input type="password" id="password"></td>
+				</tr>
+				<tr>
+					<td rowspan="4">Select your security Question</td>
+					<td colspan="2"><input type="radio" name="sec_qstn" value="sec_qstn1">What is your pet name ?</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="radio" name="sec_qstn" value="sec_qstn2">Who is your best friend ?</td>
+				<tr>
+					<td colspan="2"><input type="radio" name="sec_qstn" value="sec_qstn3">What is your favourite color ?</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="radio" name="sec_qstn" value="sec_qstn4">Who is your favourite teacher ?</td>
+				</tr>
+				<tr>
+					<td>Answer of security Question</td>
+					<td colspan="2"><input type="text" id="answer"></td>
+				</tr>
+				<tr>
+					<td>Email ID</td>
+					<td colspan="2"><input type="text" id="email"></td>
+				</tr>
+				<tr>
+					<td>Languages Known</td>
+					<td colspan="2"><input type="checkbox" id="language1" name="language1" value="Malayalam">Malayalam
+						<input type="checkbox" id="language2" name="language2" value="English">English
+						<input type="checkbox" id="language3" name="language3" value="Hindi">Hindi</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Phone Number</td>
+					<td>Home</td>
+					<td>Office</td>
+				</tr>
+				<tr>
+					<td><input type="number" id="home"></td>
+					<td><input type="number" id="home"></td>
+				</tr>
+				<tr>
+					<td>Upload CV</td>
+					<td colspan="2"><input type="file" id="myfile" name="myfile"></td>
+				</tr>
+				<tr>
+					<td align="center";><input type="reset" class="reset" value="Reset">
+					<td colspan="2" align="center";><input type="submit" class="sumbit" value"Submit">
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
